@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Manrope:wght@700;800&display=swap');
+
+:root {
+    color-scheme: dark;
+    --background: #11171b;
+    --text: #f5f7f8;
+    --cyan: #00d9f4;
+    --lime: #b6ff16;
+    --grid: rgba(57, 178, 193, .085);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--background);
+    background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+        radial-gradient(ellipse at 50% 50%, rgba(12, 72, 81, .2), transparent 55%);
+    background-size: 64px 64px, 64px 64px, auto;
+    color: var(--text);
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px clamp(20px, 5vw, 72px);
+}
+
+.wordmark {
+    display: block;
+    width: clamp(125px, 16vw, 180px);
+    line-height: 0;
+    text-decoration: none;
+}
+
+.wordmark img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header-contact {
+    display: inline-flex;
+    min-width: 124px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 217, 244, .45);
+    border-radius: 999px;
+    background: rgba(13, 30, 36, .86);
+    box-shadow: 0 0 18px rgba(0, 217, 244, .12);
+    color: #eafcff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.header-contact:hover,
+.header-contact:focus-visible {
+    border-color: var(--cyan);
+    background: rgba(0, 217, 244, .17);
+    box-shadow: 0 0 28px rgba(0, 217, 244, .32);
+}
+
+.hero {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100svh;
+    place-items: center;
+    padding: 0 12px;
+    scroll-snap-align: start;
+}
+
+.orbit-scene {
+    position: relative;
+    width: min(78vw, 680px);
+    aspect-ratio: 1;
+    isolation: isolate;
+}
+
+.orbit {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(59, 219, 228, .42);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-outer {
+    width: 83%;
+    height: 83%;
+    border-color: rgba(136, 232, 127, .58);
+    box-shadow: 0 0 24px rgba(38, 223, 219, .18), inset 0 0 20px rgba(38, 223, 219, .08);
+}
+
+.orbit-inner {
+    width: 69%;
+    height: 69%;
+    border-color: rgba(39, 200, 219, .16);
+}
+
+.orbit-glow {
+    position: absolute;
+    z-index: -2;
+    inset: 14%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 212, 231, .13), rgba(0, 212, 231, 0) 69%);
+    filter: blur(15px);
+}
+
+.circle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    clip-path: circle(50%);
+    filter: drop-shadow(0 0 18px rgba(0, 205, 235, .28));
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-nav {
+    position: absolute;
+    inset: 0;
+}
+
+.orbit-link {
+    position: absolute;
+    display: inline-flex;
+    width: clamp(176px, 19vw, 230px);
+    min-height: 96px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 217, 244, .6);
+    border-radius: 999px;
+    background: rgba(13, 30, 36, .96);
+    box-shadow: 0 0 24px rgba(0, 217, 244, .18), inset 0 0 16px rgba(0, 217, 244, .06);
+    color: #eafcff;
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.orbit-link:hover,
+.orbit-link:focus-visible {
+    border-color: var(--cyan);
+    background: rgba(0, 217, 244, .2);
+    box-shadow: 0 0 36px rgba(0, 217, 244, .45), inset 0 0 20px rgba(0, 217, 244, .12);
+    color: #fff;
+    transform: translate(-50%, -50%) scale(1.06);
+}
+
+.orbit-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+.total-station {
+    display: block;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 217, 244, .42));
+}
+
+.thermal-camera {
+    display: block;
+    width: 38px;
+    height: 46px;
+    flex: 0 0 auto;
+    filter: drop-shadow(0 0 8px rgba(0, 217, 244, .42));
+}
+
+.certificate-label {
+    min-width: 0;
+}
+
+.link-geodezja {
+    top: 20.65%;
+    left: 20.65%;
+    transform: translate(-50%, -50%);
+}
+
+.link-swiadectwa {
+    top: 79.35%;
+    left: 79.35%;
+    border-color: rgba(182, 255, 22, .72);
+    background: rgba(27, 38, 18, .97);
+    box-shadow: 0 0 24px rgba(182, 255, 22, .17), inset 0 0 16px rgba(182, 255, 22, .06);
+    color: #f4ffd8;
+    transform: translate(-50%, -50%);
+    gap: 8px;
+    width: clamp(190px, 20vw, 230px);
+    min-height: 92px;
+    padding: 12px 14px;
+    font-size: clamp(13px, 1.15vw, 15px);
+    line-height: 1.2;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.link-swiadectwa:hover,
+.link-swiadectwa:focus-visible {
+    border-color: var(--lime);
+    background: rgba(182, 255, 22, .16);
+    box-shadow: 0 0 36px rgba(182, 255, 22, .38), inset 0 0 20px rgba(182, 255, 22, .12);
+}
+
+.site-footer {
+    display: flex;
+    min-height: 112px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px clamp(20px, 5vw, 72px);
+    border-top: 1px solid rgba(80, 196, 209, .16);
+    background: rgba(11, 18, 22, .76);
+}
+
+.footer-company {
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 24px;
+}
+
+.footer-contact a {
+    color: #a9c2c7;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-tax {
+    color: #a9c2c7;
+    font-size: 14px;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+    color: var(--cyan);
+}
+
+.site-footer > p {
+    margin: 0;
+    color: #839397;
+    font-size: 12px;
+}
+
+.service-page {
+    display: flex;
+    min-height: 100vh;
+    min-height: 100svh;
+    flex-direction: column;
+}
+
+.service-page .site-header {
+    position: absolute;
+}
+
+.service-main {
+    display: grid;
+    flex: 1;
+    min-height: 70vh;
+    min-height: 70svh;
+    place-items: center;
+    padding: 100px 24px 48px;
+    text-align: center;
+}
+
+.service-main h1 {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(42px, 8vw, 88px);
+    font-weight: 800;
+    letter-spacing: -.055em;
+    line-height: 1.12;
+}
+
+.service-content {
+    display: flex;
+    width: min(100%, 760px);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.service-description {
+    max-width: 620px;
+    margin: 0;
+    color: #a9b8bc;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 1.75;
+}
+
+.service-contact-link {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    border: 1px solid rgba(0, 217, 244, .55);
+    border-radius: 999px;
+    background: rgba(0, 217, 244, .1);
+    color: #eafcff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.service-contact-link:hover,
+.service-contact-link:focus-visible {
+    border-color: var(--cyan);
+    background: rgba(0, 217, 244, .2);
+    box-shadow: 0 0 24px rgba(0, 217, 244, .22);
+}
+
+.certificate-page .service-contact-link {
+    border-color: rgba(182, 255, 22, .55);
+    background: rgba(182, 255, 22, .08);
+}
+
+.certificate-page .service-contact-link:hover,
+.certificate-page .service-contact-link:focus-visible {
+    border-color: var(--lime);
+    background: rgba(182, 255, 22, .16);
+    box-shadow: 0 0 24px rgba(182, 255, 22, .2);
+}
+
+.service-page .total-station {
+    display: inline-block;
+    width: clamp(64px, 9vw, 100px);
+    height: clamp(64px, 9vw, 100px);
+    margin-right: .18em;
+    vertical-align: middle;
+}
+
+.certificate-page .service-main h1 {
+    color: var(--lime);
+}
+
+.certificate-page .thermal-camera {
+    width: clamp(64px, 9vw, 100px);
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    width: min(100%, 760px);
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact-details h1 {
+    margin-bottom: 2px;
+    color: var(--cyan);
+}
+
+.contact-detail {
+    color: #d7e8eb;
+    font-size: clamp(18px, 2.4vw, 24px);
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.contact-detail:hover,
+.contact-detail:focus-visible {
+    color: var(--cyan);
+}
+
+.contact-address {
+    margin: 2px 0 8px;
+    color: #9aa8ad;
+    font-size: clamp(14px, 2vw, 17px);
+}
+
+.contact-hours {
+    margin: 0;
+    color: #d7e8eb;
+    font-size: 15px;
+}
+
+.contact-page .service-main {
+    padding-top: 120px;
+    padding-bottom: 48px;
+}
+
+@media (max-width: 600px) {
+    .contact-page .service-main {
+        padding: 100px 20px 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: 42px 42px, 42px 42px, auto;
+    }
+
+    .site-header {
+        padding: 16px 20px;
+    }
+
+    .wordmark {
+        width: 125px;
+    }
+
+    .hero {
+        padding: 0 12px;
+    }
+
+    .orbit-scene {
+        width: min(calc(100vw - 32px), 500px);
+    }
+
+    .orbit-link {
+        width: clamp(142px, 40vw, 184px);
+        min-height: 78px;
+        font-size: clamp(13px, 3.8vw, 16px);
+    }
+
+    .link-swiadectwa {
+        top: 84%;
+        left: 74%;
+        width: clamp(176px, 48vw, 190px);
+        min-height: 84px;
+        gap: 6px;
+        padding: 10px 11px;
+        font-size: clamp(11px, 3.1vw, 13px);
+    }
+
+    .link-swiadectwa .thermal-camera {
+        width: 32px;
+        height: 39px;
+    }
+
+    .link-geodezja .total-station {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-contact {
+        min-width: 104px;
+        min-height: 40px;
+        font-size: 13px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 14px;
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 9px;
+    }
+}
+
+@media (max-width: 360px) {
+    .orbit-link {
+        width: 144px;
+        min-height: 78px;
+        font-size: 12px;
+    }
+
+    .link-swiadectwa {
+        top: 82%;
+        left: 76%;
+        width: 170px;
+        min-height: 82px;
+        gap: 5px;
+        padding: 9px;
+        font-size: 10px;
+    }
+
+    .link-swiadectwa .thermal-camera {
+        width: 29px;
+        height: 35px;
+    }
+
+    .link-geodezja .total-station {
+        width: 29px;
+        height: 29px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        scroll-snap-type: none !important;
+        transition-duration: .01ms !important;
+    }
+}
