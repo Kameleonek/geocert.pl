@@ -1,1 +1,1 @@
-# msgr.com.pl
+# geocert.pl
