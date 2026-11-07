@@ -644,6 +644,17 @@
   <footer><span>© 2026 · MSGR sp. z o.o.</span><span><a href="kontakt.html">Kontakt</a> · <a href="index.html">Strona główna</a></span></footer>
 </div>
 <script>
+  document.querySelectorAll(".card").forEach((card) => {
+    const detailsLink = card.querySelector('.actions a[href^="swiadectwo-"]');
+    if (!detailsLink) return;
+
+    const cardLink = document.createElement("a");
+    cardLink.className = "card-link";
+    cardLink.href = detailsLink.getAttribute("href");
+    cardLink.setAttribute("aria-label", `Szczegóły: ${card.querySelector("h3").textContent.trim()}`);
+    card.prepend(cardLink);
+  });
+
   const propertyTypes = {
     lokal: "Lokal mieszkalny",
     dom: "Dom jednorodzinny",
