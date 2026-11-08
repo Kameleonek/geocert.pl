@@ -1,11 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /cache/
-Disallow: /*.pdf$
-Disallow: /*.zip$
-Crawl-delay: 1
-Sitemap: https://geosystemy.pl/sitemap.xml
-Sitemap: https://geosystemy.pl/sitemap-pl.xml
+
+Sitemap: https://geocert.pl/sitemap.xml
