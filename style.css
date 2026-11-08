@@ -213,8 +213,8 @@ a {
 }
 
 .link-lightweb {
-    top: 20.65%;
-    left: 79.35%;
+    top: 79.35%;
+    left: 20.65%;
     gap: 8px;
     padding: 10px 14px;
     border-color: rgba(192, 132, 252, .72);
@@ -496,6 +496,11 @@ a {
         font-size: clamp(11px, 3.1vw, 13px);
     }
 
+    .link-lightweb {
+        top: 81%;
+        left: 21%;
+    }
+
     .link-swiadectwa .thermal-camera {
         width: 32px;
         height: 39px;
@@ -540,6 +545,12 @@ a {
         gap: 5px;
         padding: 9px;
         font-size: 10px;
+    }
+
+    .link-lightweb {
+        top: 81%;
+        left: 21%;
+        width: 136px;
     }
 
     .link-swiadectwa .thermal-camera {
