@@ -212,6 +212,32 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.link-lightweb {
+    top: 20.65%;
+    left: 79.35%;
+    gap: 8px;
+    padding: 10px 14px;
+    border-color: rgba(192, 132, 252, .72);
+    background: rgba(35, 23, 48, .97);
+    box-shadow: 0 0 24px rgba(192, 132, 252, .2), inset 0 0 16px rgba(192, 132, 252, .08);
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    text-align: center;
+}
+
+.lightweb-icon {
+    flex: 0 0 auto;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.link-lightweb:hover,
+.link-lightweb:focus-visible {
+    border-color: #c084fc;
+    background: rgba(192, 132, 252, .18);
+    box-shadow: 0 0 36px rgba(192, 132, 252, .4), inset 0 0 20px rgba(192, 132, 252, .12);
+}
+
 .link-swiadectwa {
     top: 79.35%;
     left: 79.35%;
