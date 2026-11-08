@@ -225,6 +225,15 @@ h1, h2, h3 {
 .button-light { color: var(--ink); background: #fff; }
 .button-light:hover { background: #f3f5ef; }
 
+.faq-section { padding-top: 5rem; padding-bottom: 5rem; }
+.faq-list { width: min(820px, 100%); margin: 0 auto; border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { position: relative; padding: 1.2rem 2.5rem 1.2rem 0; font-weight: 700; cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { position: absolute; top: 50%; right: .25rem; color: var(--accent-dark); content: "+"; font-size: 1.5rem; line-height: 1; transform: translateY(-50%); }
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p { max-width: 72ch; margin: -.25rem 2rem 1.2rem 0; color: var(--muted); }
+
 .blog-preview { padding-top: 5rem; padding-bottom: 5rem; }
 .section-heading-row { display: flex; align-items: end; justify-content: space-between; gap: 1rem; text-align: left; }
 .section-heading-row h2 { margin-bottom: 0; }
@@ -325,7 +334,7 @@ h1, h2, h3 {
   .hero-decoration { right: -2rem; bottom: -3rem; top: auto; width: 48%; opacity: .35; transform: none; }
   .hero-sticker { right: .5rem; bottom: -1rem; }
   .section-wrap { width: min(100% - 2rem, 1160px); }
-  .offer, .blog-preview { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .offer, .blog-preview, .faq-section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
   .service-grid, .blog-grid { grid-template-columns: 1fr; }
   .service-card h3, .service-card > p { min-height: 0; }
   .why-layout { grid-template-columns: 1fr; gap: 1.2rem; }
