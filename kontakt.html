@@ -1,27 +1,177 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel="canonical" href="https://geocert.pl/kontakt.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#11171b">
+    <meta name="description" content="Zapytaj MSGR o usługę geodezyjną lub świadectwo charakterystyki energetycznej. Szybki kontakt, wycena i doradztwo — Kielce i powiat kielecki.">
     <link rel="icon" href="favicon.ico" sizes="any">
-    <title>Kontakt — MSGR</title>
+    <title>Zapytanie do MSGR — Kontakt</title>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="MSGR">
+    <meta property="og:url" content="https://geocert.pl/kontakt.html">
+    <meta property="og:title" content="Kontakt — MSGR Sp. z o.o. | Geodezja i Świadectwa Kielce">
+    <meta property="og:description" content="Skontaktuj się z MSGR: zapytaj o wycenę mapy do celów projektowych, tyczenia, inwentaryzacji lub świadectwa energetycznego.">
+    <meta property="og:image" content="https://geocert.pl/og-msgr.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="MSGR — geodezja, świadectwa energetyczne i strony WWW w Kielcach">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kontakt — MSGR Sp. z o.o. | Geodezja i Świadectwa Kielce">
+    <meta name="twitter:description" content="Skontaktuj się z MSGR: zapytaj o wycenę mapy do celów projektowych, tyczenia, inwentaryzacji lub świadectwa energetycznego.">
+    <meta name="twitter:image" content="https://geocert.pl/og-msgr.png">
+    <meta name="twitter:image:alt" content="MSGR — geodezja, świadectwa energetyczne i strony WWW w Kielcach">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kontakt-form.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "ProfessionalService",
+        "name": "MSGR Sp. z o.o.",
+        "telephone": "+48798367400",
+        "email": "geotechnix@op.pl",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Górnicza 58",
+          "postalCode": "25-651",
+          "addressLocality": "Kielce",
+          "addressRegion": "świętokrzyskie",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.8661,
+          "longitude": 20.6286
+        }
+      }
+    }
+    </script>
 </head>
 <body class="service-page contact-page">
     <header class="site-header">
-        <a class="wordmark" href="index.html" aria-label="MSGR — strona główna"><img src="logo.png" alt="MSGR — geodezja i świadectwa charakterystyki energetycznej"></a>
+        <a class="wordmark" href="index.html" aria-label="MSGR — strona główna"><img src="logo-msgr.jpg" alt="MSGR — geodezja i świadectwa charakterystyki energetycznej"></a>
+        <nav class="header-nav" aria-label="Menu główne">
+            <a href="geodezja.html">Geodezja</a>
+            <a href="swiadectwa.html">Świadectwa</a>
+            <a href="promocje.html">Promocje</a>
+            <a href="msgrit.html">Strony WWW</a>
+            <a href="blog.html">Blog</a>
+        </nav>
         <a class="header-contact" href="#kontakt">Kontakt</a>
     </header>
 
-    <main class="service-main">
-        <section class="contact-details" id="kontakt" aria-labelledby="contact-title">
-            <h1 id="contact-title">Kontakt</h1>
-            <a class="contact-detail" href="tel:+48798367400">+48 798 367 400</a>
-            <a class="contact-detail" href="mailto:geotechnix@op.pl">geotechnix@op.pl</a>
-            <p class="contact-hours">Godziny kontaktu: 9:00–17:00</p>
-            <p class="contact-address">Stara Zbelutka 91, 26-025 Łagów, woj. świętokrzyskie</p>
-        </section>
+    <main class="contact-main" id="kontakt">
+        <div class="contact-intro">
+            <span class="contact-eyebrow">MSGR / KONTAKT</span>
+            <h1>Zapytaj o <span>usługę.</span></h1>
+            <p>Opisz krótko sprawę. Wybierz usługę, a jeśli znasz dane nieruchomości, podaj jej lokalizację.</p>
+        </div>
+
+        <div class="contact-layout">
+            <form class="contact-form" id="geodesy-contact-form" action="https://formsubmit.co/geotechnix@op.pl" method="POST">
+                <input type="hidden" name="_subject" value="Nowe zapytanie ze strony MSGR">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="Nazwa usługi" id="service-label">
+                <input type="hidden" name="Pakiet promocyjny" id="package-label">
+                <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="promo-context" id="promoContext" hidden>
+                    <strong id="promoContextLabel"></strong>
+                    <span>Pakiet został już wybrany — uzupełnij dane kontaktowe, a my potwierdzimy warunki oferty.</span>
+                </div>
+                <div class="contact-fields">
+                    <label>
+                        Imię
+                        <input name="firstName" autocomplete="given-name" required>
+                    </label>
+                    <label>
+                        Nazwisko <span class="field-optional">(opcjonalnie)</span>
+                        <input name="lastName" autocomplete="family-name">
+                    </label>
+                    <label>
+                        Adres e-mail
+                        <input name="email" type="email" autocomplete="email" required>
+                    </label>
+                    <label>
+                        Telefon <span class="field-optional">(opcjonalnie)</span>
+                        <input name="phone" type="tel" autocomplete="tel">
+                    </label>
+                    <label>
+                        Usługa
+                        <select name="service" id="service-select" required>
+                            <option value="" selected disabled>Wybierz usługę</option>
+                            <option value="swiadectwo">Świadectwo charakterystyki energetycznej</option>
+                            <option value="mapa-projektowa">Mapa do celów projektowych</option>
+                            <option value="inwentaryzacja-powykonawcza">Inwentaryzacja geodezyjna powykonawcza</option>
+                            <option value="tyczenie-budynkow">Tyczenie budynków</option>
+                            <option value="mapa-podzialu">Mapa z projektem podziału nieruchomości</option>
+                            <option value="wznowienie-znakow-granicznych">Wznowienie znaków granicznych</option>
+                            <option value="wyznaczenie-punktow-granicznych">Wyznaczenie punktów granicznych</option>
+                            <option value="ustalenie-granic-dzialek">Ustalenie przebiegu granic działek</option>
+                            <option value="mapa-prawna">Inna mapa do celów prawnych</option>
+                            <option value="inna">Inna sprawa geodezyjna</option>
+                            <option value="strona-www">Strona WWW</option>
+                            <option value="promocja">Zapytanie o promocję / pakiet</option>
+                        </select>
+                    </label>
+                    <label class="field-wide" id="property-type-field" hidden>
+                        Rodzaj nieruchomości
+                        <input name="propertyType" id="property-type" placeholder="Np. lokal mieszkalny lub budynek wielorodzinny">
+                    </label>
+                    <label>
+                        Miejscowość lub gmina
+                        <input name="location" autocomplete="address-level2">
+                    </label>
+                    <label>
+                        Adres nieruchomości <span class="field-optional">(opcjonalnie)</span>
+                        <input name="propertyAddress" autocomplete="street-address" placeholder="Ulica i numer budynku/lokalu">
+                    </label>
+                    <label>
+                        Kod pocztowy <span class="field-optional">(opcjonalnie)</span>
+                        <input name="postalCode" autocomplete="postal-code" placeholder="Np. 00-000">
+                    </label>
+                    <label>
+                        Numer działki i obręb
+                        <input name="parcel" placeholder="Np. 123/4, obręb 0001">
+                    </label>
+                    <label class="field-wide">
+                        Wiadomość
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                </div>
+
+                <div class="geoportal-help">
+                    <p>Nie znasz numeru działki?</p>
+                    <a href="https://mapy.geoportal.gov.pl/" target="_blank" rel="noopener noreferrer">Otwórz Geoportal w nowej karcie ↗</a>
+                    <span>Po sprawdzeniu działki wróć tutaj i wpisz jej numer oraz miejscowość. Dane nie przeniosą się automatycznie.</span>
+                </div>
+
+                <label class="privacy-check">
+                    <input type="checkbox" name="Informacja o danych" value="Zapoznałem(-am) się z informacją o przetwarzaniu danych" required>
+                    <span>Wysyłając formularz, proszę o kontakt w sprawie wyceny i przyjmuję do wiadomości, że podane dane zostaną wykorzystane do obsługi tego zapytania. Formularz jest obsługiwany przez <a href="https://formsubmit.co/" target="_blank" rel="noopener noreferrer">FormSubmit</a> i przesyła wiadomość na adres MSGR wskazany na stronie <a href="kontakt.html">kontaktowej</a>. Szczegóły: <a href="polityka-prywatnosci.html">polityka prywatności</a>.</span>
+                </label>
+
+                <p class="form-privacy">Nie załączaj dokumentów ani danych wrażliwych. Jeśli będą potrzebne, ustalimy bezpieczny sposób ich przekazania.</p>
+                <button class="contact-submit" type="submit">Wyślij zapytanie</button>
+                <p class="form-fallback">Formularz nie wysyła się? Napisz bezpośrednio na <a href="mailto:geotechnix@op.pl">geotechnix@op.pl</a> lub zadzwoń <a href="tel:+48798367400">+48 798 367 400</a>.</p>
+            </form>
+
+            <aside class="contact-sidebar">
+                <h2>Wolisz porozmawiać?</h2>
+                <a class="contact-detail" href="tel:+48798367400">+48 798 367 400</a>
+                <a class="contact-detail" href="mailto:geotechnix@op.pl">geotechnix@op.pl</a>
+                <p class="contact-hours">Godziny kontaktu: 9:00–17:00</p>
+                <p class="contact-address">
+                    Biuro: ul. Górnicza 58, 25-651 Kielce<br>
+                    <a href="https://www.google.com/maps/search/?api=1&query=ul.+G%C3%B3rnicza+58,+25-651+Kielce" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:4px;color:#2f6df6;font-size:12px">📍 Pokaż na Mapach Google ↗</a><br>
+                    <small style="color:var(--muted,#777)">Siedziba: Stara Zbelutka 91, 26-025 Łagów</small>
+                </p>
+            </aside>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -30,8 +180,127 @@
             <a href="tel:+48798367400">+48 798 367 400</a>
             <a href="mailto:geotechnix@op.pl">geotechnix@op.pl</a>
             <span class="footer-tax">NIP: 6572957653</span>
+            <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+            <a href="regulamin.html">Regulamin</a>
         </div>
         <p>Wszelkie prawa zastrzeżone © 2026</p>
     </footer>
+
+    <script>
+        const services = {
+            "strona-www": "Strona WWW",
+            "mapa-projektowa": "Mapa do celów projektowych",
+            "inwentaryzacja-powykonawcza": "Inwentaryzacja geodezyjna powykonawcza",
+            "tyczenie-budynkow": "Tyczenie budynków",
+            "mapa-podzialu": "Mapa z projektem podziału nieruchomości",
+            "wznowienie-znakow-granicznych": "Wznowienie znaków granicznych",
+            "wyznaczenie-punktow-granicznych": "Wyznaczenie punktów granicznych",
+            "ustalenie-granic-dzialek": "Ustalenie przebiegu granic działek",
+            "mapa-prawna": "Inna mapa do celów prawnych",
+            "inna": "Inna sprawa geodezyjna"
+        };
+        const certificateTypes = {
+            "lokal": "Lokal mieszkalny",
+            "dom": "Dom jednorodzinny",
+            "wielorodzinny": "Budynek wielorodzinny",
+            "gospodarczy": "Budynek gospodarczy",
+            "magazynowy": "Budynek magazynowy",
+            "produkcyjny": "Budynek produkcyjny",
+            "rekreacyjny": "Budynek rekreacji indywidualnej (dom letniskowy)",
+            "administracji-publicznej": "Budynek administracji publicznej",
+            "biurowy": "Budynek biurowy",
+            "gastronomiczny": "Budynek gastronomiczny",
+            "handlowy": "Budynek handlowy",
+            "kultu-religijnego": "Budynek kultu religijnego",
+            "kultury": "Budynek kultury",
+            "nauki": "Budynek nauki",
+            "obslugi-bankowej": "Budynek obsługi bankowej",
+            "obslugi-pasazerow": "Budynek obsługi pasażerów w transporcie",
+            "opieki-zdrowotnej": "Budynek opieki zdrowotnej",
+            "oswiaty": "Budynek oświaty",
+            "prokuratury": "Budynek prokuratury",
+            "sportu": "Budynek sportu",
+            "szkolnictwa-wyzszego": "Budynek szkolnictwa wyższego",
+            "turystyki": "Budynek turystyki",
+            "uslug": "Budynek usług",
+            "wymiaru-sprawiedliwosci": "Budynek wymiaru sprawiedliwości",
+            "inny-publiczny": "Budynek inny (użyteczności publicznej)",
+            "akademika": "Budynek akademika",
+            "aresztu": "Budynek aresztu",
+            "domu-dziecka": "Budynek domu dziecka",
+            "domu-rencistow": "Budynek domu rencistów",
+            "domu-wycieczkowego": "Budynek domu wycieczkowego",
+            "domu-wypoczynkowego": "Budynek domu wypoczynkowego",
+            "domu-zakonnego": "Budynek domu zakonnego",
+            "hotelu": "Budynek hotelu",
+            "internatu": "Budynek internatu",
+            "koszar": "Budynek koszar",
+            "motelu": "Budynek motelu",
+            "pensjonatu": "Budynek pensjonatu",
+            "schroniska": "Budynek schroniska",
+            "schroniska-dla-nieletnich": "Budynek schroniska dla nieletnich",
+            "schroniska-mlodziezowego": "Budynek schroniska młodzieżowego",
+            "zakladu-karnego": "Budynek zakładu karnego",
+            "zakladu-poprawczego": "Budynek zakładu poprawczego",
+            "inny-zamieszkania-zbiorowego": "Budynek inny (zamieszkania zbiorowego)"
+        };
+        const serviceSelect = document.getElementById("service-select");
+        const propertyTypeField = document.getElementById("property-type-field");
+        const propertyTypeInput = document.getElementById("property-type");
+        const serviceLabelInput = document.getElementById("service-label");
+        const packageLabelInput = document.getElementById("package-label");
+        const promoContext = document.getElementById("promoContext");
+        const promoContextLabel = document.getElementById("promoContextLabel");
+        const params = new URLSearchParams(window.location.search);
+        const requestedService = params.get("service");
+        const requestedPropertyType = params.get("typ");
+        const requestedPackage = params.get("pakiet");
+        const packages = {
+            "SwiadectwoZa50zl": "Super Promocja: Świadectwo za 50 zł (Kielce i powiat kielecki)",
+            "Inwestor": "Pakiet Inwestor (Geodezja + Świadectwo)",
+            "BiznesStart": "Pakiet Biznes Start (Strona WWW + Świadectwo)",
+            "Indywidualny": "Pakiet Na Miarę (Wielousługowy)"
+        };
+        services.swiadectwo = "Świadectwo charakterystyki energetycznej";
+        services.promocja = "Zapytanie o promocję / pakiet";
+
+        if (requestedService && services[requestedService]) {
+            serviceSelect.value = requestedService;
+        }
+        if (requestedPropertyType) {
+            propertyTypeInput.value = certificateTypes[requestedPropertyType] || requestedPropertyType;
+        }
+        const updatePropertyTypeVisibility = () => {
+            const isCertificate = serviceSelect.value === "swiadectwo";
+            propertyTypeField.hidden = !isCertificate;
+            if (!isCertificate) {
+                propertyTypeInput.value = "";
+            }
+        };
+        const updateServiceLabel = () => {
+            serviceLabelInput.value = services[serviceSelect.value] || "";
+        };
+        const applyPackage = (label) => {
+            packageLabelInput.value = label;
+            serviceLabelInput.value = label || services[serviceSelect.value] || "";
+            promoContextLabel.textContent = label;
+            promoContext.hidden = !label;
+        };
+        serviceSelect.addEventListener("change", () => {
+            updatePropertyTypeVisibility();
+            if (serviceSelect.value === "promocja" && requestedPackage && packages[requestedPackage]) {
+                applyPackage(packages[requestedPackage]);
+            } else {
+                applyPackage("");
+                updateServiceLabel();
+            }
+        });
+        updatePropertyTypeVisibility();
+        updateServiceLabel();
+        if (requestedPackage && packages[requestedPackage]) {
+            serviceSelect.value = "promocja";
+            applyPackage(packages[requestedPackage]);
+        }
+    </script>
 </body>
 </html>

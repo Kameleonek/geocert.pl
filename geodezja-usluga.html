@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta name="theme-color" content="#f3f2ee">
+  <link rel="canonical" id="dynamicCanonical" href="https://geocert.pl/geodezja-usluga.html">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Szczegóły usług geodezyjnych MSGR.">
+  <title>Usługi geodezyjne — MSGR</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="swiadectwa.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="MSGR">
+  <meta property="og:title" content="Usługi geodezyjne — MSGR">
+  <meta property="og:description" content="Szczegóły usług geodezyjnych MSGR.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Usługi geodezyjne — MSGR">
+  <meta name="twitter:description" content="Szczegóły usług geodezyjnych MSGR.">
+</head>
+<body>
+<div class="frame">
+  <div class="bar"><a href="index.html">MSGR</a><nav class="bar-nav" aria-label="Menu główne"><a href="geodezja.html" aria-current="page">Geodezja</a><a href="swiadectwa.html">Świadectwa</a><a href="promocje.html">Promocje</a><a href="msgrit.html">Strony WWW</a><a href="blog.html">Blog</a><a href="kontakt.html">Kontakt</a></nav><span>Usługi / Geodezja / Szczegóły</span></div>
+  <main class="detail-main">
+    <nav class="detail-crumb" aria-label="Nawigacja okruszkowa">
+      <a href="geodezja.html">← Geodezja</a>
+      <span id="service-number"></span>
+    </nav>
+    <header class="detail-hero">
+      <span class="eyebrow" id="service-category"></span>
+      <h1><span id="service-title"></span> <em id="service-title-accent"></em></h1>
+      <p class="lead" id="service-summary"></p>
+    </header>
+    <div class="detail-sections">
+      <section class="detail-section">
+        <h2>Na czym polega usługa?</h2>
+        <p id="service-description"></p>
+      </section>
+      <section class="detail-section">
+        <h2>Zakres prac</h2>
+        <ul id="service-scope"></ul>
+      </section>
+      <section class="detail-section">
+        <h2>Co warto przygotować?</h2>
+        <ul id="service-preparation"></ul>
+      </section>
+      <section class="detail-section">
+        <h2>Ustalenie realizacji</h2>
+        <p id="service-process"></p>
+      </section>
+    </div>
+    <div class="detail-cta">
+      <a class="btn primary" id="service-contact-link" href="kontakt.html">Zapytaj o usługę</a>
+      <p>Masz pytanie? Zadzwoń: <a href="tel:+48798367400">+48 798 367 400</a></p>
+    </div>
+  </main>
+  <footer><span>© 2026 · MSGR sp. z o.o.</span><span><a href="kontakt.html">Kontakt</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="index.html">Strona główna</a></span></footer>
+</div>
+<script>
+  const services = {
+    "mapa-projektowa": {
+      number: "01",
+      category: "Pomiary sytuacyjno-wysokościowe",
+      title: "Mapa do celów",
+      titleAccent: "projektowych.",
+      summary: "Aktualne opracowanie geodezyjne terenu jako podkład do przygotowania dokumentacji projektowej.",
+      description: "Mapa przedstawia istniejące elementy zagospodarowania i rzeźbę terenu w zakresie potrzebnym dla planowanej inwestycji.",
+      scope: [
+        "Pomiary sytuacyjne i wysokościowe elementów objętych opracowaniem.",
+        "Opracowanie wyników pomiarów w formie mapy do celów projektowych.",
+        "Dopasowanie zakresu i skali do celu inwestycji."
+      ],
+      preparation: [
+        "Informacje o planowanej inwestycji i jej lokalizacji.",
+        "Dostępne materiały lub wcześniejsza dokumentacja terenu.",
+        "Wymagania projektanta, jeśli zostały już określone."
+      ],
+      process: "Zakres pomiarów i treść mapy ustalamy z inwestorem lub projektantem. Wycena zależy od lokalizacji oraz zakresu opracowania."
+    },
+    "inwentaryzacja-powykonawcza": {
+      number: "02",
+      category: "Pomiary inwentaryzacyjne",
+      title: "Inwentaryzacje geodezyjne",
+      titleAccent: "powykonawcze.",
+      summary: "Pomiar położenia zrealizowanych obiektów i elementów uzbrojenia terenu po zakończeniu robót.",
+      description: "Inwentaryzacja powykonawcza dokumentuje położenie obiektów objętych zleceniem i umożliwia przygotowanie wymaganych opracowań geodezyjnych.",
+      scope: [
+        "Pomiary obiektów i elementów infrastruktury objętych zleceniem.",
+        "Opracowanie wyników pomiarów w wymaganej formie.",
+        "Zakres dostosowany do rodzaju inwestycji."
+      ],
+      preparation: [
+        "Informacje o zakończonych robotach i mierzonych elementach.",
+        "Projekt lub dokumentacja dotycząca realizowanej inwestycji.",
+        "Uzgodnienie terminu dostępu do terenu i obiektu."
+      ],
+      process: "Zakres pomiaru, wymagane materiały i termin ustalamy przed rozpoczęciem prac, uwzględniając rodzaj i etap inwestycji."
+    },
+    "tyczenie-budynkow": {
+      number: "03",
+      category: "Pomiary realizacyjne",
+      title: "Tyczenie",
+      titleAccent: "budynków.",
+      summary: "Wyznaczenie w terenie położenia budynku zgodnie z dokumentacją projektową.",
+      description: "Tyczenie przenosi na teren położenie obiektu i charakterystyczne punkty wskazane w dokumentacji inwestycji.",
+      scope: [
+        "Wyznaczenie osi i charakterystycznych punktów budynku.",
+        "Przeniesienie położenia projektowanego obiektu w teren.",
+        "Zakres czynności uzgodniony na podstawie projektu."
+      ],
+      preparation: [
+        "Aktualna dokumentacja projektowa z lokalizacją obiektu.",
+        "Informacje o terminie rozpoczęcia robót.",
+        "Możliwość dostępu do terenu inwestycji."
+      ],
+      process: "Przed tyczeniem ustalamy zakres punktów do wyznaczenia, termin prac oraz dokumenty potrzebne do prawidłowego wykonania zlecenia."
+    },
+    "mapa-podzialu": {
+      number: "04",
+      category: "Podziały nieruchomości",
+      title: "Mapa z projektem",
+      titleAccent: "podziału nieruchomości.",
+      summary: "Opracowanie geodezyjne przedstawiające proponowany podział nieruchomości zgodnie z jego celem.",
+      description: "Przygotowanie projektu podziału wymaga analizy nieruchomości, dostępnych materiałów i założeń dotyczących planowanego podziału.",
+      scope: [
+        "Analiza materiałów i danych dotyczących nieruchomości.",
+        "Przygotowanie mapy z projektem podziału.",
+        "Ustalenie zakresu dalszych czynności dla konkretnej sprawy."
+      ],
+      preparation: [
+        "Dane pozwalające zidentyfikować nieruchomość.",
+        "Informacja o celu i oczekiwanym przebiegu podziału.",
+        "Dostępne dokumenty dotyczące nieruchomości."
+      ],
+      process: "Możliwość i zakres podziału zależą od konkretnej nieruchomości oraz celu sprawy. Szczegóły i wycenę ustalamy po zapoznaniu się z dostępnymi informacjami."
+    },
+    "wznowienie-znakow-granicznych": {
+      number: "05",
+      category: "Czynności graniczne",
+      title: "Wznowienie znaków",
+      titleAccent: "granicznych.",
+      summary: "Odtworzenie położenia wcześniej ustalonych znaków granicznych na podstawie dostępnych materiałów.",
+      description: "Przed wznowieniem analizuje się dokumentację, która pozwala określić położenie znaków granicznych i zakres czynności terenowych.",
+      scope: [
+        "Analiza dokumentacji geodezyjnej dotyczącej granic.",
+        "Odtworzenie i wskazanie położenia znaków w terenie.",
+        "Czynności przeprowadzane w zakresie właściwym dla sprawy."
+      ],
+      preparation: [
+        "Dane działki lub nieruchomości.",
+        "Dostępne dokumenty i wcześniejsze opracowania geodezyjne.",
+        "Informacje o znakach granicznych i stanie ich widoczności."
+      ],
+      process: "Zakres możliwych czynności zależy od dokumentacji źródłowej. Po jej wstępnym sprawdzeniu ustalamy dalszy tryb, termin i wycenę."
+    },
+    "wyznaczenie-punktow-granicznych": {
+      number: "06",
+      category: "Czynności graniczne",
+      title: "Wyznaczenie punktów",
+      titleAccent: "granicznych.",
+      summary: "Wskazanie w terenie położenia punktów granicznych ujawnionych w dokumentacji ewidencyjnej.",
+      description: "Wyznaczenie punktów granicznych poprzedza sprawdzenie dostępnych danych i materiałów geodezyjnych dotyczących nieruchomości.",
+      scope: [
+        "Sprawdzenie dostępnych danych i materiałów geodezyjnych.",
+        "Wyznaczenie punktów i ich wskazanie w terenie.",
+        "Ustalenie zakresu czynności w zależności od stanu dokumentacji."
+      ],
+      preparation: [
+        "Dane działki lub nieruchomości.",
+        "Dokumenty dotyczące granic, jeśli są dostępne.",
+        "Informacja, które punkty mają zostać wskazane."
+      ],
+      process: "Możliwość i sposób wyznaczenia punktów zależą od dokumentacji. Zakres prac ustalamy po zapoznaniu się z danymi dotyczącymi nieruchomości."
+    },
+    "ustalenie-granic-dzialek": {
+      number: "07",
+      category: "Granice działek ewidencyjnych",
+      title: "Ustalenie przebiegu granic działek",
+      titleAccent: "ewidencyjnych.",
+      summary: "Czynności dotyczące ustalenia przebiegu granic działek ewidencyjnych z uwzględnieniem dokumentacji i sytuacji terenowej.",
+      description: "Zakres ustalenia przebiegu granic zależy od dostępnych materiałów, danych ewidencyjnych i okoliczności konkretnej sprawy.",
+      scope: [
+        "Analiza dostępnych materiałów i danych ewidencyjnych.",
+        "Czynności terenowe prowadzone w zakresie właściwym dla sprawy.",
+        "Ustalenie dalszego trybu na podstawie dokumentacji i okoliczności."
+      ],
+      preparation: [
+        "Dane pozwalające zidentyfikować działkę.",
+        "Dostępne dokumenty dotyczące nieruchomości i granic.",
+        "Informacje o sąsiednich działkach i zainteresowanych stronach."
+      ],
+      process: "Właściwy tryb i zakres czynności ustalamy indywidualnie po analizie materiałów i informacji o sprawie."
+    },
+    "mapa-prawna": {
+      number: "08",
+      category: "Opracowania do celów prawnych",
+      title: "Inna mapa",
+      titleAccent: "do celów prawnych.",
+      summary: "Sporządzenie mapy geodezyjnej potrzebnej do spraw prawnych lub formalnych, zależnie od celu opracowania.",
+      description: "Rodzaj i treść mapy do celów prawnych dobiera się do wymagań konkretnej sprawy oraz dostępnej dokumentacji.",
+      scope: [
+        "Ustalenie celu i wymagań dotyczących opracowania.",
+        "Analiza dokumentacji i danych dotyczących nieruchomości.",
+        "Sporządzenie mapy w uzgodnionym zakresie."
+      ],
+      preparation: [
+        "Opis sprawy, do której potrzebna jest mapa.",
+        "Dane pozwalające zidentyfikować nieruchomość.",
+        "Wymagania instytucji lub osoby prowadzącej sprawę, jeśli są znane."
+      ],
+      process: "Przed rozpoczęciem prac potwierdzamy, jaki rodzaj mapy będzie właściwy, jakie materiały są potrzebne i jaki jest zakres wyceny."
+    }
+  };
+
+  const serviceKey = new URLSearchParams(window.location.search).get("service");
+  document.getElementById("dynamicCanonical").href =
+      "https://geocert.pl/geodezja-usluga.html" + window.location.search;
+  const service = services[serviceKey];
+  if (!service) {
+    window.location.replace("geodezja.html");
+  } else {
+    document.getElementById("service-contact-link").href = `kontakt.html?service=${encodeURIComponent(serviceKey)}`;
+    document.title = `${service.title} ${service.titleAccent} | Geodezja — MSGR`;
+    document.querySelector('meta[name="description"]').content = service.summary;
+    document.querySelector('meta[property="og:title"]').content = document.title;
+    document.querySelector('meta[property="og:description"]').content = service.summary;
+    document.querySelector('meta[name="twitter:title"]').content = document.title;
+    document.querySelector('meta[name="twitter:description"]').content = service.summary;
+    document.getElementById("service-number").textContent = `${service.number} / ${service.title} ${service.titleAccent}`;
+    document.getElementById("service-category").textContent = service.category;
+    document.getElementById("service-title").textContent = service.title;
+    document.getElementById("service-title-accent").textContent = service.titleAccent;
+    document.getElementById("service-summary").textContent = service.summary;
+    document.getElementById("service-description").textContent = service.description;
+    document.getElementById("service-process").textContent = service.process;
+
+    for (const [listId, items] of [
+      ["service-scope", service.scope],
+      ["service-preparation", service.preparation]
+    ]) {
+      const list = document.getElementById(listId);
+      for (const text of items) {
+        const item = document.createElement("li");
+        item.textContent = text;
+        list.append(item);
+      }
+    }
+  }
+</script>
+</body>
+</html>

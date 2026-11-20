@@ -1,0 +1,413 @@
+.contact-main {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 126px 24px 64px;
+}
+
+.contact-intro {
+    max-width: 720px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.contact-eyebrow {
+    color: var(--cyan);
+    font: 11px/1.4 'DM Sans', Arial, sans-serif;
+    letter-spacing: .18em;
+}
+
+.contact-intro h1 {
+    margin: 10px 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(42px, 7vw, 72px);
+    font-weight: 800;
+    letter-spacing: -.055em;
+    line-height: 1.1;
+}
+
+.contact-intro h1 span {
+    color: var(--cyan);
+}
+
+.contact-intro p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #a9b8bc;
+    line-height: 1.7;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(230px, .75fr);
+    gap: 22px;
+    align-items: start;
+}
+
+.contact-form,
+.contact-sidebar {
+    border: 1px solid rgba(126, 181, 190, .2);
+    border-radius: 16px;
+    background: rgba(15, 25, 30, .88);
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    padding: clamp(20px, 4vw, 32px);
+}
+
+.contact-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.contact-fields label {
+    display: grid;
+    gap: 8px;
+    color: #d7e8eb;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-fields [hidden] {
+    display: none;
+}
+
+.contact-fields .field-wide {
+    grid-column: 1 / -1;
+}
+
+.field-optional {
+    color: #84969b;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.contact-fields input,
+.contact-fields select,
+.contact-fields textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 11px 12px;
+    border: 1px solid rgba(126, 181, 190, .32);
+    border-radius: 8px;
+    outline: none;
+    background: #10191e;
+    color: var(--text);
+    font: 15px/1.5 'DM Sans', Arial, sans-serif;
+}
+
+.contact-fields textarea {
+    min-height: 128px;
+    resize: vertical;
+}
+
+.contact-fields input::placeholder {
+    color: #718187;
+}
+
+.contact-fields input:focus,
+.contact-fields select:focus,
+.contact-fields textarea:focus {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 3px rgba(0, 217, 244, .12);
+}
+
+.geoportal-help {
+    display: grid;
+    gap: 5px;
+    padding: 15px 16px;
+    border-left: 3px solid var(--cyan);
+    background: rgba(0, 217, 244, .055);
+}
+
+.geoportal-help p {
+    margin: 0;
+    color: #d7e8eb;
+    font-weight: 700;
+}
+
+.geoportal-help a {
+    width: fit-content;
+    color: var(--cyan);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.geoportal-help a:hover,
+.geoportal-help a:focus-visible {
+    text-decoration: underline;
+}
+
+.geoportal-help span {
+    color: #9aa8ad;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.privacy-check {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr);
+    align-items: start;
+    gap: 10px;
+    color: #9aa8ad;
+    font-size: 13px;
+    line-height: 1.55;
+    cursor: pointer;
+}
+
+.privacy-check input {
+    width: 16px;
+    height: 16px;
+    margin: 2px 0 0;
+    accent-color: var(--cyan);
+}
+
+.form-honeypot {
+    position: absolute !important;
+    left: -10000px !important;
+    width: 1px !important;
+    height: 1px !important;
+}
+
+.form-privacy {
+    margin: -7px 0 0;
+    color: #9aa8ad;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.promo-context {
+    display: grid;
+    gap: 4px;
+    margin: 0 0 18px;
+    padding: 12px 14px;
+    border: 1px solid var(--cyan);
+    border-radius: 8px;
+    background: rgba(47, 109, 246, .08);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.promo-context[hidden] {
+    display: none;
+}
+
+.promo-context strong {
+    color: #071519;
+}
+
+.form-fallback {
+    margin: 12px 0 0;
+    color: #9aa8ad;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.form-fallback a {
+    color: var(--cyan);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.contact-submit {
+    min-height: 48px;
+    padding: 12px 18px;
+    border: 1px solid var(--cyan);
+    border-radius: 8px;
+    background: var(--cyan);
+    color: #071519;
+    font: 700 15px/1.3 'DM Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: filter .2s ease, transform .2s ease;
+}
+
+.contact-submit:hover {
+    filter: brightness(1.08);
+}
+
+.contact-submit:active {
+    transform: translateY(1px);
+}
+
+.contact-submit:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+.contact-sidebar {
+    display: grid;
+    justify-items: start;
+    gap: 13px;
+    padding: 24px;
+}
+
+.contact-sidebar h2 {
+    margin: 0 0 5px;
+    color: var(--cyan);
+    font: 700 21px/1.3 'Manrope', Arial, sans-serif;
+}
+
+.contact-sidebar .contact-detail {
+    font-size: 16px;
+}
+
+.contact-sidebar .contact-hours,
+.contact-sidebar .contact-address {
+    margin: 4px 0 0;
+    color: #9aa8ad;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    border-color: #d5dddf;
+    background: #fff;
+    color: #11171b;
+    color-scheme: light;
+}
+
+.contact-form .contact-fields label {
+    color: #273237;
+}
+
+.contact-form .field-optional {
+    color: #68777c;
+}
+
+.contact-form .contact-fields input,
+.contact-form .contact-fields select,
+.contact-form .contact-fields textarea {
+    border-color: #c5d0d3;
+    background: #fff;
+    color: #11171b;
+}
+
+.contact-form .contact-fields input::placeholder {
+    color: #78858a;
+}
+
+.contact-form .contact-fields input:focus,
+.contact-form .contact-fields select:focus,
+.contact-form .contact-fields textarea:focus {
+    border-color: #008b9b;
+    box-shadow: 0 0 0 3px rgba(0, 139, 155, .12);
+}
+
+.contact-form .geoportal-help {
+    border-left-color: #008b9b;
+    background: #f1f7f8;
+}
+
+.contact-form .geoportal-help p {
+    color: #273237;
+}
+
+.contact-form .geoportal-help a {
+    color: #007887;
+}
+
+.contact-form .geoportal-help span,
+.contact-form .privacy-check,
+.contact-form .form-privacy {
+    color: #566368;
+}
+
+.contact-form .privacy-check input {
+    accent-color: #008b9b;
+}
+
+.contact-form .contact-submit:focus-visible {
+    outline-color: #11171b;
+}
+
+.contact-page {
+    color-scheme: light;
+    background: #fff;
+    color: #11171b;
+}
+
+.contact-page .site-header {
+    border-bottom: 1px solid #d5dddf;
+    background: #fff;
+}
+
+.contact-page .contact-eyebrow,
+.contact-page .contact-intro h1 span {
+    color: #007887;
+}
+
+.contact-page .contact-intro p {
+    color: #566368;
+}
+
+.contact-page .contact-sidebar {
+    border-color: #d5dddf;
+    background: #fff;
+    color: #11171b;
+}
+
+.contact-page .contact-sidebar h2 {
+    color: #007887;
+}
+
+.contact-page .contact-sidebar .contact-detail {
+    color: #11171b;
+}
+
+.contact-page .contact-sidebar .contact-hours,
+.contact-page .contact-sidebar .contact-address {
+    color: #566368;
+}
+
+.contact-page .site-footer {
+    border-top-color: #d5dddf;
+    background: #fff;
+}
+
+.contact-page .footer-company {
+    color: #11171b;
+}
+
+.contact-page .footer-contact a,
+.contact-page .footer-tax {
+    color: #566368;
+}
+
+.contact-page .footer-contact a:hover,
+.contact-page .footer-contact a:focus-visible {
+    color: #007887;
+}
+
+.contact-page .site-footer > p {
+    color: #68777c;
+}
+
+@media (max-width: 760px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .contact-main {
+        padding: 104px 18px 36px;
+    }
+
+    .contact-intro {
+        margin-bottom: 24px;
+    }
+
+    .contact-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-fields .field-wide {
+        grid-column: auto;
+    }
+}
