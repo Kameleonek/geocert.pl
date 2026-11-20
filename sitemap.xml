@@ -4,67 +4,82 @@
 
   <url>
        <loc>https://geocert.pl/</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>1.0000</priority>
   </url>
   <url>
+       <loc>https://geocert.pl/promocje.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/index.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
        <loc>https://geocert.pl/kontakt.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/polityka-prywatnosci.html</loc>
-       <lastmod>2026-11-19T00:00:00+00:00</lastmod>
-       <priority>0.3000</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/regulamin.html</loc>
-       <lastmod>2026-11-19T00:00:00+00:00</lastmod>
-       <priority>0.3000</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/geodezja.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/msgrit.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://geocert.pl/swiadectwa.html</loc>
-       <lastmod>2026-11-15T22:00:00+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://geocert.pl/promocje.html</loc>
-       <lastmod>2026-11-15T22:00:00+00:00</lastmod>
+       <loc>https://geocert.pl/msgrit.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/geodezja.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/polityka-prywatnosci.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/regulamin.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/blog.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/swiadectwo-lokal.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://geocert.pl/swiadectwo-dom.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://geocert.pl/strona-one-page.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://geocert.pl/strona-firmowa.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://geocert.pl/strona-firmowa-email.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://geocert.pl/strona-adsense.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/blog.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
@@ -75,221 +90,6 @@
   <url>
        <loc>https://geocert.pl/blog-domena-hosting-ssl.html</loc>
        <lastmod>2026-11-08T00:00:00+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-lokal.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-dom.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-budynek.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-gospodarczy.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-magazynowy.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-produkcyjny.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-rekreacji.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-administracji-publicznej.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-biurowy.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-gastronomiczny.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-handlowy.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-kultu-religijnego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-kultury.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-nauki.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-obslugi-bankowej.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-obslugi-pasazerow.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-opieki-zdrowotnej.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-oswiaty.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-prokuratury.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-sportu.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-szkolnictwa-wyzszego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-turystyki.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-uslug.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-wymiaru-sprawiedliwosci.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-inny-publiczny.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-akademika.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-aresztu.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-domu-dziecka.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-domu-rencistow.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-domu-wycieczkowego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-domu-wypoczynkowego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-domu-zakonnego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-hotelu.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-internatu.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-koszar.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-motelu.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-pensjonatu.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-schroniska.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-schroniska-dla-nieletnich.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-schroniska-mlodziezowego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-zakladu-karnego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-zakladu-poprawczego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://geocert.pl/swiadectwo-inny-zamieszkania-zbiorowego.html</loc>
-       <lastmod>2026-11-08T08:34:35+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
@@ -332,4 +132,9 @@
        <lastmod>2026-11-08T00:00:00+00:00</lastmod>
        <priority>0.5120</priority>
   </url>
-  </urlset>
+  <url>
+       <loc>https://geocert.pl/geodezja-usluga.html</loc>
+       <lastmod>2026-11-20T07:13:15+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+</urlset>
